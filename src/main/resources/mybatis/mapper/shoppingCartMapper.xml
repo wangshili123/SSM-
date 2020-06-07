@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+	<!-- 接口类的位置 -->
+	<mapper namespace="com.wangshili.dao.ShoppingCartMapper">
+		<!-- 通过sqL替换*，增加效率，方便修改 -->
+		<sql id="cols">
+			userid,productid,number
+		</sql>
+		
+		<!-- 添加购物车信息 :如果存在相同的用户id和商品id，则修改数量，否则插入新数据
+			需要给这两个字段添加联合主键才能保证不会重复
+			 number = values(number)+ number 再加入的值基础上加上原先的值，不会覆盖
+			 ON duplicate KEY 判断主键是否存在
+		-->
+		<insert id="insert">
+			insert into cart (userid, productid, number) values (#{userid},#{productid},#{number})
+				ON duplicate KEY UPDATE
+       				 number = values(number)+ number
+		</insert>
+		
+		<!--删除购物车信息  -->
+		<delete id="deleteProduct">
+			DELETE from cart where userid=#{userid} and productid=#{productid}
+		</delete>
+
+	</mapper>

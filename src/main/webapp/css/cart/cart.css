@@ -1,0 +1,292 @@
+
+a{
+    text-decoration: none;
+    color: rgba(192, 187, 181, 0.719);
+}
+/* 头+搜索栏 */
+.top{
+    /* background-color: royalblue; */
+    margin-top: 40px;
+    width: 100%;
+    height: 70px;
+    /* text-align: center; */
+}
+.header{
+    /* float: left; */
+    margin: 0px auto;
+    /* background-color: violet; */
+    width: 1000px;
+    /* height: 70px; */
+    /* background-color: rosybrown; */
+    /* float: left; */
+}
+.header .left{
+    height:70px;
+    width: 250px;
+    /* background-color: rgba(143, 137, 137, 0.4); */
+    float: left;
+    
+}
+.header .left img{
+    height: 70px;
+
+}
+.header .left span{
+    display: inline-block;
+    font-size: 40px;
+    color: rgb(61, 60, 60);
+    /* background-color: rgba(143, 137, 137, 0.4); */
+    line-height: 40px;
+    vertical-align: top;
+    line-height: 70px;
+}
+
+
+/* 设置整个输入框 */
+.header .right{
+    top: 25px;
+    height: 38px;
+    width: 494px; 
+    border: 2px solid red;
+    float: right;
+    margin-top: 15px;
+}
+
+
+.exit{
+    font-size: 18px;
+    position: relative;
+    top: 30px;
+}
+
+/* 设置input */
+.header .right input{
+    height: 27px;
+    width: 390px;
+    /* padding: 0px 4px 0px 12px; */
+    padding-left: 10px;
+    /* 不显示外框 */
+    border: 0;
+    margin-left: 2px;
+    outline: none;
+    font-size: 18px;
+}
+
+
+.header .right .button{
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+    background-color: red;
+    border:2px solid red;
+    position: relative;
+    right: -2px;
+}
+.header .right .button:hover{
+    background-color: rgb(204, 93, 93);
+    border:2px solid rgb(204, 93, 93);
+}
+.header .right .button .icon-sousuo{
+    font-size: 26px;
+    color: white;
+    /* line-height: 33px; */
+    padding-left: 17px;
+}
+.header .right .iconfont.icon-xiangji{
+    font-size: 18px;
+}
+/************************************************************/
+.title{
+    height: 40px;
+    /* background-color: saddlebrown; */
+}
+
+
+.title .left{
+    height: 40px;
+    width: 1000px;
+    margin: 0 auto;
+    /* background-color: rgb(36, 103, 190); */
+    font-size: 22px; 
+    margin-top: 40px;
+ 
+}
+.title .left .shangpingxinxi{
+    display: inline-block;
+    margin-left: 90px;
+}
+.title .left input{
+    width: 20px;
+    height:20px;
+    margin-right: 10px;
+    /* 开启相对定位 */
+    position: relative;
+    top:2px;
+}
+
+
+
+.title .left .right{
+    display: inline-block;
+    position: relative;
+    right: -210px;
+
+   
+}
+
+.title .left .right span{
+    margin-left: 75px;
+    position: relative;
+
+}
+
+/* 8888888888888888888888888888888888 */
+.item{
+    /* height: 142px; */
+    /* background-color: saddlebrown; */
+
+}
+
+.item .item-2{
+    width: 1000px;
+    height: 142px;
+    margin: 0 auto;
+    /* background-color: sandybrown; */
+    border: 1px solid rgb(185, 177, 177);
+    margin-top: 20px;
+}
+
+.item .message{
+    width: 980px;
+    margin: 0 auto;
+    /* background-color: salmon; */
+    position: relative;
+    top:15px;
+    color:#3c3c3c; 
+}
+
+.item .check{
+    width: 15px;
+    height:15px;
+    vertical-align: top;
+}
+.item .message img{
+    width:140px;
+    margin-right: 10px;
+}
+
+.item .message span{
+    display: inline-block;
+    vertical-align: top;
+    text-align: start;
+    /* margin-left: 60px; */
+    /* 限制文字的宽度 */
+    width: 110px;
+    /* margin-right: 20px; */
+    position: relative;
+}
+
+.item .message .explain{
+    display: inline-block;
+    width: 260px;
+    vertical-align: top;
+    /* margin-left: 5px;
+    margin-right: 90px; */
+    font-size: 18px;
+    /* 限制文字最大的高 超出就显示。。。*/
+    max-height: 95px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+}
+.item .message .opeation{
+    /* display: inline-block; */
+    vertical-align: top;
+    position: relative;
+    width: 40px;
+    float: right;
+    right: 10px;
+}
+/* 单价与商品信息的距离 */
+.item .message .price{
+    left:90px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.item .message .number{
+    left:105px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.item .message .total{
+    right:-5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.item .message .fuhao-1{
+    display: inline-block;
+    width: 30px;
+    left:105px;
+}
+
+.item .message .fuhao-2{
+    /* display: inline-block;
+    width: 30px; */
+    left:100px;
+    color: red;
+}
+
+
+
+.item .message .opeation:hover{
+    color: red;
+}
+
+
+.item .total{
+    color: rgb(235, 20, 102);
+}
+
+/* 设计结算部分 */
+.selt-a{
+    /* background-color: khaki; */
+    height: 50px;
+    margin-top: 30px;
+    color:#3c3c3c; 
+}
+
+.selt-a .selt{
+    margin: 0 auto;
+    /* background-color: lawngreen; */
+    width: 1000px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(248, 246, 245);
+}
+
+.selt-a .selt .nei{
+    float: right;
+    font-size: 19px;
+
+}
+
+.selt .nei .money{
+    font-size: 25px;
+    margin-right: 10px;
+}
+.selt .nei .jiesuan{
+    display: inline-block;
+    height: 50px;
+    width: 120px;
+    background-color: #f40;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.selt .nei .jiesuan:hover{
+    background-color: red;
+}

@@ -1,0 +1,58 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1435",
+      "name": "下拉",
+      "font_class": "xiala",
+      "unicode": "f01fa",
+      "unicode_decimal": 983546
+    },
+    {
+      "icon_id": "351757",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "375644",
+      "name": "city",
+      "font_class": "chengshi",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "720973",
+      "name": "搜索",
+      "font_class": "xiazai15",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "7338652",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "8356568",
+      "name": "京东2",
+      "font_class": "jingdong",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "14160914",
+      "name": "相机",
+      "font_class": "xiangji",
+      "unicode": "e74e",
+      "unicode_decimal": 59214
+    }
+  ]
+}

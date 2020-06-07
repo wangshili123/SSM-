@@ -1,0 +1,119 @@
+
+.navigation{
+    width: 100%;
+    height: 31px;
+    overflow: hidden;
+}
+/* 设置工具栏包含状态 */
+.navigation .navigation-bar{
+    width: 1190px;
+    height: 31px;
+    margin: 0 auto;
+    /* 设置线高和高度一致可以使所有元素居中对齐 */
+    line-height: 31px;
+    /* 设置字体颜色统一 */
+    color: #999;
+    font-size: 12px;
+}
+
+
+/* 将所有的元素并排 */
+.navigation-bar ul{
+    /* 列表向右浮动 */
+    float: right; 
+}
+.navigation-bar 
+li,.my-jingdong,.company-purchase,.customer-service
+,.website-navigation,.myjd-bar{
+    float: left;
+}
+
+/* 在中间加分隔符,去除最后一个元素 */
+.navigation-bar li:not(:last-of-type)::before{
+    content: '';
+    width: 1px;
+    height: 10px;
+    background-color:#999;
+    float: right;
+    margin: 10.5px 17px;
+
+}
+   /* 统一给去掉超链接下划线 */
+.navigation-bar a{
+ 
+    text-decoration: none;
+    color: #999;
+}
+
+
+
+/* 在文字后面添加下拉图标 */
+.xiala::after{
+    content: '\f01fa';
+    font-family: 'iconfont';
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-left: 6px;
+    /* 让图标和字体中线对齐 */
+    vertical-align: middle;
+    position: absolute;
+    /* right:0px;   */
+}
+
+/* *********************************************city ********************************/
+
+/* 地址div背景和边框变色 */
+/* 这里绑定一个大层级city-bar的鼠标事件才能避免异常其中一个位置后不生效 */
+.navigation-bar .city-bar:hover .city{
+    background-color: white;
+    border: 2px solid rgba(161, 158, 158, 0.7);
+    /* 去除下边的边框 */
+    border-bottom: none;
+}
+
+/* 在地址前面加图标 */
+.city i::before{
+    content: '\e60a';
+    font-family: 'iconfont';
+    font-size: 15px;
+    margin-right: 5px;
+    color: red;
+}
+/* 设置当前地址那里的外边框 */
+.navigation-bar .city{
+    float: left;
+    /* 开启相对定位 */
+    position: relative;
+    /* 设置层级要大于弹出的下拉框，这样下边的边框才能盖住 */
+    z-index: 9999;
+    width: 60px;
+    line-height: 28px;
+    /* 先设置边框完全透明，不显示处理 */
+    border: 2px solid rgba(161, 158, 158,0);;
+}
+/* 制作地址下拉框 */
+.navigation-bar .city-display{
+    width: 322px;
+    height: 465px;
+    background-color: white;
+    /* float: left; */
+    /* 设置绝对定位脱离文档流 */
+    position: absolute;
+    /* 设置等级，保证必须显示在最上层 */
+    z-index: 999;
+    border: 2px solid  rgba(161, 158, 158, 0.7);
+    /* 向上移一点,与父元素边框重叠 */
+    top:28px;
+    /* 没有默认情况是隐藏的 */
+    display: none;
+}
+
+/* 设置当前位置的鼠标移入显示框 */
+/* 这里绑定一个大层级city-bar的鼠标事件才能避免异常其中一个位置后不生效 */
+.navigation-bar .city-bar:hover .city-display{
+    /* 把位置块显示出来 */
+    display: block;
+}
+
+/* *********************************************myjingdong ********************************/

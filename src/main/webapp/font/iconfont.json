@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1435",
+      "name": "下拉",
+      "font_class": "xiala",
+      "unicode": "f01fa",
+      "unicode_decimal": 983546
+    },
+    {
+      "icon_id": "375644",
+      "name": "city",
+      "font_class": "chengshi",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    }
+  ]
+}

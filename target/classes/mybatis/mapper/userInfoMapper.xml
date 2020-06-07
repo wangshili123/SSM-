@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+	<!-- 接口类的位置 -->
+	<mapper namespace="com.wangshili.dao.UserInfoMapper">
+		<!-- 通过sqL替换*，增加效率，方便修改 -->
+		<sql id="cols">
+			id,username,password
+		</sql>
+		
+		<!-- 查找对应的用户名的信息 -->
+		<select id="findByusername" resultType="com.wangshili.pojo.UserInfo">
+			select <include refid="cols"/> from userinfo where username=#{username}
+		</select>
+		
+		<!-- 插入数据 -->
+		<insert id="insertUser">
+			insert into userinfo values(null,#{username},#{password})
+		</insert>
+	</mapper>

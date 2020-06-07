@@ -1,0 +1,35 @@
+用cookie,session, 分别设置cookie和session的过期时间即可，再次打开浏览器，浏览器会发生这个cookie保存的sessionid过来,
+存cookie时的属性名必须是JSESSIONID,关键是map也要存储着id和用户名，方便判断
+
+Ajax实现用户名密码检测
+点击退出就会销毁记录
+cookie问题：必须在当前页面加cookie，只作用当前请求的路径，不然其他路径加不起作用
+session问题：不继承servlet，无法获得filter后的session
+
+点击图片，将图片名发过去，通过查找数据库，将商品全部信息取出并存入域中，跳转商品信息页，展示出来
+
+创建实体类不要用基本数据类型
+
+优化查询语句，传入实体类，需要查找的就加入数据，不需要的填写空，这样就能动态的查询
+
+获取购物车清单时，要返回list集合，会有多个结果
+
+Parameter 'userid' not found. Available parameters are [0, 1, 2, param3, param1, param2]错误原因：
+	如果是一个参数时，那么在mybatis中获取时无所谓顺序，只要是这个参数，那么我通过#{参数}便能获取，但是当有多个时他在mybatis中就会转换成如下：
+	List<Seckill> queryAll(arg0,arg1);
+	那么这两个参数的顺序在#{}取值时便不能明确表示是哪一个，此时Mybatis为我们提供了一个注解：
+	public interface ShoppingCartMapper {
+		void insert(@Param(value = "userid")Integer userid,
+				@Param(value = "productid")Integer productid,
+				@Param(value = "number")Integer number);
+	}
+
+	这样的话，Mybatis中取值的时候就会知道arg0代表的userid，而arg1代表的productid。
+
+//关于注册功能
+判空，用户名存在检验，两次输入检验，不做正则判断了
+
+//多用户可能会出现的bug
+设计不合理的地方：当多用户进去，map存的username和域存的username会错乱，注销时也会产生问题，还有session的问题，不同用户session不同
+所以需要解决单session的问题，多用户需要对应多session
+还是还原，接收request来获取session吧

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+	<!-- 接口类的位置 -->
+	<mapper namespace="com.wangshili.dao.CommodityMapper">
+		<!-- 通过sqL替换*，增加效率，方便修改 -->
+		<sql id="cols">
+			id,description,price,url
+		</sql>
+		
+		<!-- 查找对应的用户名的信息 ,动态查询，传入一个Commodity对象-->
+		<select id="findBycom" resultType="com.wangshili.pojo.Commodity">
+		<!-- 占位符只有一个时，名字随意 -->
+			select <include refid="cols"/> from commodity where 1=1 
+
+				<if test="id!=null">
+					and id=#{id}
+				</if>
+				<if test="description!=null">
+					and description=#{description}
+				</if>
+				<if test="price!=null">
+					and price=#{price}
+				</if>
+				<if test="url!=null">
+					and url=#{url}
+				</if>
+		</select>
+		
+		<!--配合cart表取出购物车信息,配合like模糊查询  -->
+		<select id="findAndCart" resultType="com.wangshili.pojo.Commodity">
+			select <include refid="cols"/>,number from cart ct,commodity cd
+			where #{id}=ct.userid and ct.productid = cd.id
+			<if test="description!='' and description!=null">
+				and cd.description like "%"#{description}"%"
+			</if>
+		</select>
+	</mapper>

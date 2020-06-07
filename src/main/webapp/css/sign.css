@@ -1,0 +1,147 @@
+
+.topframe{
+    width: 1200px;
+    height: 72px;
+    margin: 42px auto;
+    overflow:hidden;
+
+}
+.topframe img{
+    margin-right: 33px;
+    margin-left: 42px;
+    vertical-align: middle; 
+}
+.topframe .line{
+    display: inline-block;
+    width: 4px;
+    height:72px;
+    margin-right: 22px;
+    background-color: #676767;
+    vertical-align: middle;
+}
+.topframe .font{
+    display: inline-block;
+    color: #676767;
+    font-size: 36px;
+    vertical-align: middle;
+}
+
+.middle{
+    width: 1200px;
+    height: 480px;
+    margin: 42px auto 0;
+    overflow: hidden;
+    border: 7px solid #f0f0f0;
+}
+.middle img{
+    float: left;
+    /* 去除图片基线对齐导致的缝隙 */
+    vertical-align: top;
+    /* display: inline-block; */
+}
+
+.form{
+    /* display: inline-block; */
+    width: 600px;
+    height: 483px;
+    float: left;
+}
+
+.form h1{
+
+    margin-top: 70px;
+    margin-bottom: 30px;
+    /* 让文字居中 */
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333333;
+}
+.form .error{
+    color: red;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+	/* 先给定一个高与字体大小一致，以免出现字后将其他元素撑开 */
+	height: 16px;
+	margin-top: 10px;
+}
+.form .fword{
+    float:right;
+    line-height: 160px;
+    vertical-align: bottom;
+    margin-right: 10px;
+    text-decoration: none;/* 去掉超链接下划线 */
+    text-shadow: 1px 1px rgba(0, 0, 0, .1);
+    color: rgba(0, 0, 0, .8);
+}
+
+.form .fword:hover{
+    color: rosybrown;
+}
+
+/* 把输入的样式统一 */
+.form input{
+    display: block;
+    margin: 0 auto;
+    height: 49px;
+    width: 381px;
+    border: 2px solid #ededed;
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 10px;
+    
+}
+
+.form .username,.password{
+	display: block;
+    /* 设置图片不重复 */
+    background-repeat: no-repeat;
+    /* 设置位置 */
+    background-position: 14px 14px;
+    /* 添加文字缩进，使文字靠右不挡住图标 */
+    text-indent: 45px;
+   	/* padding-left:45px  */
+
+}
+.form .username{
+    background-image: url(../imgs/u_ico.jpg);
+}
+
+.form .password{
+    background-image: url(../imgs/p_ico.jpg);
+
+}
+.form .sign{
+    display: block;
+    background-color: #e03c0c;
+    color: seashell;
+    font-size: 20px;
+    height: 49px;
+    width: 381px;
+    /* 设置字符间距 */
+    letter-spacing: 5px;
+   	line-height: 49px;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.form .sign:hover{
+	background-color: red;
+}
+
+/* ****** footer start ****** */
+#footer{
+	/*background-color:pink;*/
+	width: 1200px;
+	margin:0 auto;
+	margin-top:144px;
+}
+
+#footer p{
+	text-align:center;
+	line-height:34px;
+	font-size:14px;
+	color:#999999;
+}
+/* ****** footer end ****** */

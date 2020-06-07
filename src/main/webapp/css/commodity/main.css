@@ -1,0 +1,213 @@
+a{
+    text-decoration: none;
+}
+.all{
+    /* position: relative; */
+    width: 900px;
+    /* height: 550px; */
+
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 2px solid rgb(233, 225, 225);
+    
+}
+.wenzi{
+    /* height: 20px; */
+    text-align: center;
+}
+.wenzi .out{
+    float: left;
+    position: relative;
+    right: -10px;
+    font-size: 16px;
+}
+.wenzi span{
+    position: relative;
+    right: 30px;
+}
+.wenzi div{
+    padding-top: 0px;
+    height: 40px;
+    font-size: 20px;
+    color: rgba(27, 29, 29,1);
+    text-shadow:1px 1px rgba(27, 29, 29,.3);
+    letter-spacing: 5px;
+    line-height: 40px;
+    background-color: rgb(238, 234, 234);
+}
+.img{
+    /* float: left; */
+    display: inline-block;
+    width: 450px;
+    background-color: thistle;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+.img img{
+    width: 100%;
+}
+
+.item{
+    /* float: right; */
+
+    display: inline-block;
+    /* background-color: turquoise; */
+    width: 430px;
+    /* height: 380px; */
+    margin-top: 2px;
+    margin-right: 2px;
+    /* font-weight: bold; */
+    vertical-align: top;
+ 
+}
+
+.item .desripation{
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+    line-height: 25px;
+     font-weight: bold;
+}
+
+.item .price{
+    position: relative;
+    top:10px;
+    background-color: rgb(255, 242, 232);
+    width: 430px;
+    height: 60px;
+    margin-top: 2px;
+    margin-right: 2px;
+    font-weight: bold;
+    /* text-align: center; */
+    vertical-align: middle;
+    color:  rgb(108, 108, 108);
+}
+.item .price .yuanjia{
+    font-size: 14px;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.item .price .yuanjia .number{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+.item .price .price-name{
+    display: inline-block;
+    line-height: 60px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.item .price .price-a{
+    display: inline-block;
+    line-height: 50px;
+    padding-left: 15px;
+    font-size: 20px;
+    color: rgb(224, 45, 45);
+}
+
+.item .pinglun{
+    float: right;
+    /* line-height: 60px; */
+    font-size: 10px;
+    /* margin-top: 1px; */
+    /* position: relative; */
+    /* top:-10px; */
+}
+
+.item .pinglun .number{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.item .pinglun .number span{
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.item .setnumber{
+    /* background-color: khaki; */
+    margin-top: 40px;
+    color: rgb(108, 108, 108);
+    font-size:14px;
+}
+
+.item .setnumber .span{
+    margin-left: 15px;
+}
+
+.item .setnumber .set{
+    display: inline-block;
+    margin-left: 25px;
+    
+}
+
+
+.item .setnumber input{
+    position: relative;
+    height: 25px;
+    width: 50px;
+    border: 2px solid rgba(108, 108, 108,.7);
+    top: -2px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.item .setnumber .set a{
+    position: relative;
+    display: inline-block;
+    height: 23px;
+    width: 28px;
+    color:rgba(108, 108, 108,.8);
+}
+.item .setnumber .set .icon-jian{
+    font-size: 30px;
+    top: 4px;
+}
+.item .setnumber .set .icon-jiahaozhankai{
+    font-size: 36px;
+    left: -5px;
+    top: 6px;
+}
+
+
+.item .pinglun .span{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.item .pinglun .span span{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/* 加入购物车按钮 */
+.item .addButton{
+    display: inline-block;
+    background-color: rgb(235, 46, 71);
+    width: 190px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    /* position: relative;
+    top:130px;
+    left: 20px; */
+    margin-top: 120px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+
+.item .addButton:hover{
+    background-color: rgb(212, 40, 63);
+}
+
+.item .addButton span{
+    color: white;
+    letter-spacing: 2px;
+}
+
+.item .addButton .icon-gouwuche{
+    color: white;
+    margin-right: 5px;
+}
